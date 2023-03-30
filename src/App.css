@@ -1,7 +1,10 @@
 .App {
   text-align: center;
+  background-image: url(https://images.pexels.com/photos/413195/pexels-photo-413195.jpeg?auto=compress&cs=tinysrgb&w=1600);
 }
-
+.appContainer {
+  background-color: #282c3476;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -35,4 +38,53 @@
   to {
     transform: rotate(360deg);
   }
+}
+#myJumbotron {
+  box-shadow: -1px 11px 40px 20px rgba(0, 0, 0, 0.67);
+  -webkit-box-shadow: -1px 11px 40px 20px rgba(0, 0, 0, 0.67);
+  -moz-box-shadow: -1px 11px 40px 20px rgba(0, 0, 0, 0.67);
+  background-image: url(https://images.pexels.com/photos/159711/books-bookstore-book-reading-159711.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+}
+#myJumbotron > div {
+  background-color: rgba(0, 0, 0, 0.294);
+}
+#myJumbotron > div > div > div {
+  background-color: rgba(0, 0, 0, 0.294);
+}
+h1 {
+  font-size: 70px;
+  font-weight: 800;
+}
+.scale-up-center {
+  scale: 0.97;
+}
+.scale-up-center:hover {
+  -webkit-animation: scale-up-center 0.2s cubic-bezier(0.39, 0.575, 0.565, 1)
+    both;
+  z-index: 1;
+  animation: scale-up-center 0.2s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+}
+
+@-webkit-keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(1.03);
+    transform: scale(1.03);
+  }
+}
+@keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(1.03);
+    transform: scale(1.03);
+  }
+}
+.selected {
+  background-color: bisque;
 }
